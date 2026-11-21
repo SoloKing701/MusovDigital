@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişim | Musov Digital Creative</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Musov <span>Digital</span></a>
+            <div class="menu-toggle" id="menu-toggle">☰</div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="hakkimizda.html">Hakkımızda</a></li>
+                <li><a href="hizmetler.html">Hizmetler</a></li>
+                <li><a href="iletisim.html" class="active">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="container">
+            <div class="section-title">
+                <h2>Bizimle <span class="gradient-text">İletişime Geçin</span></h2>
+                <p>Markanızı büyütmek için ilk adımı bugün atın.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <div class="card">
+                    <div class="card-icon">💬</div>
+                    <h3>İletişim Bilgileri</h3>
+                    <p style="margin-bottom: 1.5rem;">Projeleriniz, iş birlikleri ve fiyat teklifleri için bize dilediğiniz zaman ulaşabilirsiniz.</p>
+                    <p style="margin-bottom: 0.8rem;"><strong>Instagram:</strong> @musovdigitalcreative</p>
+                    <p style="margin-bottom: 0.8rem;"><strong>Behance:</strong> behance.net/onataygl</p>
+                    <p style="margin-bottom: 0.8rem;"><strong>E-posta:</strong> info@musovdigital.com</p>
+                    <p><strong>Konum:</strong> İstanbul, Türkiye</p>
+                </div>
+
+                <div class="card">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Adınız Soyadınız</label>
+                            <input type="text" id="name" placeholder="Adınızı girin" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-posta Adresiniz</label>
+                            <input type="email" id="email" placeholder="ornek@mail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="service">İlgilendiğiniz Hizmet</label>
+                            <select id="service">
+                                <option value="sosyal-medya">Sosyal Medya Yönetimi</option>
+                                <option value="cekim">Fotoğraf & Video Çekimi</option>
+                                <option value="kurumsal-kimlik">Kurumsal Kimlik & Logo</option>
+                                <option value="reklam">Reklam Yönetimi</option>
+                                <option value="web">Web Site Hizmetleri</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mesajınız</label>
+                            <textarea id="message" rows="4" placeholder="Projenizden kısaca bahsedin..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Mesaj Gönder</button>
+                        <p id="formFeedback" style="margin-top: 1rem; color: var(--blue-neon); display: none;"></p>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2026 Musov Digital Creative Agency. Tüm Hakları Saklıdır.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
